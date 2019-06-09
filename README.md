@@ -16,3 +16,4 @@ For help getting started with Flutter, view our
 samples, guidance on mobile development, and a full API reference.
 
 <img src="forReadme/screenshot.png" height="400" />
+<img src="screenshot_1.png" height="400" />

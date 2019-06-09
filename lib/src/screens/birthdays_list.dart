@@ -64,11 +64,11 @@ class BirthdaysList extends StatelessWidget {
                   width: 1,
                   height: 30,
                   decoration: BoxDecoration(
-                    color: Colors.green
+                    color: Colors.grey
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.only(top: 3, bottom: 3),
+                  margin: EdgeInsets.only(top: 5, bottom: 5),
                   width: 8,
                   height: 8,
                   decoration: BoxDecoration(
@@ -80,7 +80,7 @@ class BirthdaysList extends StatelessWidget {
                   width: 1,
                   height: 30,
                   decoration: BoxDecoration(
-                      color: Colors.green
+                      color: Colors.grey
                   ),
                 ),
               ],
