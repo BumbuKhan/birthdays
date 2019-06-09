@@ -8,11 +8,14 @@ class BirthDate extends StatelessWidget {
   BirthDate({ this.day, this.weekDay, this.color });
 
   Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
-        Text(this.day, style: TextStyle(color: this.color, fontSize: 22)),
-        Text(this.weekDay, style: TextStyle(color: Colors.grey))
-      ],
+    return Container(
+      width: 30,
+      child: Column(
+        children: <Widget>[
+          Text(this.day, style: TextStyle(color: this.color, fontSize: 22)),
+          Text(this.weekDay, style: TextStyle(color: Colors.grey))
+        ],
+      ),
     );
   }
 }
