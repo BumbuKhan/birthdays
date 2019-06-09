@@ -45,7 +45,7 @@ class BirthdaysList extends StatelessWidget {
       child: Row(
         children: <Widget>[
           Timeline(color: Colors.red),
-          BirthDate(day: '24', weekDay: 'Mon'),
+          BirthDate(day: '24', weekDay: 'Mon', color: Colors.green),
           Expanded(
             child: ListTile(
               leading: CircleAvatar(
