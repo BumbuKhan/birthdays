@@ -38,7 +38,7 @@ class BirthdaysList extends StatelessWidget {
     );
   }
 
-  Widget buildListCard (String name, int age, String imgURL) {
+  Widget buildListCard (String fullName, int age, String imgURL) {
     return Card(
       margin: EdgeInsets.only(top: 0, right: 16, bottom: 0, left: 16),
       elevation: 0,
@@ -47,13 +47,7 @@ class BirthdaysList extends StatelessWidget {
           Timeline(color: Colors.red),
           BirthDate(day: '24', weekDay: 'Mon', color: Colors.green),
           Expanded(
-            child: ListTile(
-              leading: CircleAvatar(
-                backgroundImage: NetworkImage(imgURL),
-              ),
-              title: Text('${name}', style: TextStyle( fontWeight: FontWeight.bold )),
-              subtitle: Text('${age} years old'),
-            ),
+            child: UserInfo(fullName: fullName, age: age, imgUrl: imgURL),
           )
         ],
       ),
