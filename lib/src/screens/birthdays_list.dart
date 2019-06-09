@@ -33,7 +33,6 @@ class BirthdaysList extends StatelessWidget {
         buildListCard('Cubic Rubic Ray', 27, 'https://i.pravatar.cc/300?u=v042511d4e22026703c', '19', 'Mon'),
         buildListCard('Alex May', 20, 'https://i.pravatar.cc/300?u=v029511d4e22026703c', '12', 'Tue'),
         buildListCard('Nicolay Koster', 30, 'https://i.pravatar.cc/300?u=v029511d4e28026703c', '31', 'Fri'),
-
       ],
     );
   }

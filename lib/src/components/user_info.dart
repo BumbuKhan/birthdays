@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// TODO: Add ability ro show multi birthdays in the same day.
 class UserInfo extends StatelessWidget {
   final String fullName;
   final int age;
