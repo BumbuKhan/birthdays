@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../components/timeline.dart';
+import '../components/birth_date.dart';
 
 class BirthdaysList extends StatelessWidget {
   Widget build(BuildContext build) {
@@ -58,15 +59,8 @@ class BirthdaysList extends StatelessWidget {
       elevation: 0,
       child: Row(
         children: <Widget>[
-          Timeline(
-            color: Colors.red
-          ),
-          Column(
-            children: <Widget>[
-              Text('24', style: TextStyle(color: Colors.cyan, fontSize: 22)),
-              Text('Mon', style: TextStyle(color: Colors.grey))
-            ],
-          ),
+          Timeline(color: Colors.red),
+          BirthDate(day: '24', weekDay: 'Mon'),
           Expanded(
             child: ListTile(
               leading: CircleAvatar(
