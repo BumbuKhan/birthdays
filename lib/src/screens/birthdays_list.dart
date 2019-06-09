@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../components/timeline.dart';
 import '../components/birth_date.dart';
+import '../components/month_title.dart';
 
 class BirthdaysList extends StatelessWidget {
   Widget build(BuildContext build) {
@@ -17,7 +18,7 @@ class BirthdaysList extends StatelessWidget {
   Widget buildList() {
     return ListView(
       children: <Widget>[
-        buildListTitle('June', 5),
+        MonthTitle(month: 'June', birthdaysCount: 5),
 
         buildListCard('Amely Newton', 21, 'https://i.pravatar.cc/300?u=a042581f4e29026704r'),
         buildListCard('Nicola Tesla', 91, 'https://i.pravatar.cc/300?u=a043581f4e29026704r'),
@@ -25,31 +26,17 @@ class BirthdaysList extends StatelessWidget {
         buildListCard('Misha Amely', 20, 'https://i.pravatar.cc/300?u=a042581f4e29026703c'),
         buildListCard('Abella Jeorge', 27, 'https://i.pravatar.cc/300?u=v042581f4e29026703c'),
 
-        buildListTitle('July', 2),
+        MonthTitle(month: 'July', birthdaysCount: 2),
 
         buildListCard('Jerry Cola', 20, 'https://i.pravatar.cc/300?u=v042531f4e22026703c'),
         buildListCard('Pispis Bunny', 27, 'https://i.pravatar.cc/300?u=v042511f4e22026703c'),
 
-        buildListTitle('August', 3),
+        MonthTitle(month: 'August', birthdaysCount: 3),
         buildListCard('Cubic Rubic Ray', 27, 'https://i.pravatar.cc/300?u=v042511d4e22026703c'),
         buildListCard('Alex May', 20, 'https://i.pravatar.cc/300?u=v029511d4e22026703c'),
         buildListCard('Nicolay Koster', 30, 'https://i.pravatar.cc/300?u=v029511d4e28026703c'),
 
       ],
-    );
-  }
-
-  Widget buildListTitle (String month, int birthdaysCount) {
-    return Container(
-      margin: EdgeInsets.only(top: 32, right: 16, bottom: 16, left: 16),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
-          Text('${month}', style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold)),
-          Container(height: 4),
-          Text('${birthdaysCount} birthday(s)', style: TextStyle(color: Colors.grey))
-        ],
-      ),
     );
   }
 
