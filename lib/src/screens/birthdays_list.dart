@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../components/timeline.dart';
+
 class BirthdaysList extends StatelessWidget {
   Widget build(BuildContext build) {
     return Scaffold(
@@ -56,35 +58,8 @@ class BirthdaysList extends StatelessWidget {
       elevation: 0,
       child: Row(
         children: <Widget>[
-          Container(
-            margin: EdgeInsets.only(right: 16),
-            child: Column(
-              children: <Widget>[
-                Container(
-                  width: 1,
-                  height: 30,
-                  decoration: BoxDecoration(
-                    color: Colors.grey
-                  ),
-                ),
-                Container(
-                  margin: EdgeInsets.only(top: 5, bottom: 5),
-                  width: 8,
-                  height: 8,
-                  decoration: BoxDecoration(
-                      color: Colors.green,
-                      borderRadius: BorderRadius.all(Radius.circular(5))
-                  ),
-                ),
-                Container(
-                  width: 1,
-                  height: 30,
-                  decoration: BoxDecoration(
-                      color: Colors.grey
-                  ),
-                ),
-              ],
-            ),
+          Timeline(
+            color: Colors.red
           ),
           Column(
             children: <Widget>[
