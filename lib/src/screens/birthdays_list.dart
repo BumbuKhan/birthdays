@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../components/timeline.dart';
-import '../components/birth_date.dart';
-import '../components/month_title.dart';
+import '../components/components.dart';
 
 class BirthdaysList extends StatelessWidget {
   Widget build(BuildContext build) {
