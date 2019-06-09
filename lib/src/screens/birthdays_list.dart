@@ -56,6 +56,36 @@ class BirthdaysList extends StatelessWidget {
       elevation: 0,
       child: Row(
         children: <Widget>[
+          Container(
+            margin: EdgeInsets.only(right: 16),
+            child: Column(
+              children: <Widget>[
+                Container(
+                  width: 1,
+                  height: 30,
+                  decoration: BoxDecoration(
+                    color: Colors.green
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.only(top: 3, bottom: 3),
+                  width: 8,
+                  height: 8,
+                  decoration: BoxDecoration(
+                      color: Colors.green,
+                      borderRadius: BorderRadius.all(Radius.circular(5))
+                  ),
+                ),
+                Container(
+                  width: 1,
+                  height: 30,
+                  decoration: BoxDecoration(
+                      color: Colors.green
+                  ),
+                ),
+              ],
+            ),
+          ),
           Column(
             children: <Widget>[
               Text('24', style: TextStyle(color: Colors.cyan, fontSize: 22)),
