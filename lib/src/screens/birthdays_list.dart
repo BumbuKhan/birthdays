@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../components/components.dart';
+import '../mockData/data.dart';
 
 class BirthdaysList extends StatelessWidget {
   Widget build(BuildContext build) {

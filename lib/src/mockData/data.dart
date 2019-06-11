@@ -1,4 +1,4 @@
-{
+var data = <String, dynamic>{
   "months": {
     "January": {
       "05.01.1993": {
@@ -64,4 +64,5 @@
       ]
     }
   }
-}
+};
+
