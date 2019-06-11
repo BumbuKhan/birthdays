@@ -43,7 +43,7 @@ class BirthdaysList extends StatelessWidget {
       elevation: 0,
       child: Row(
         children: <Widget>[
-          Timeline(color: Colors.red),
+          Timeline(color: Colors.grey[400]),
           BirthDate(day: birthDay, weekDay: weekDay, color: Colors.green),
           Expanded(
             child: UserInfo(fullName: fullName, age: age, imgUrl: imgURL),
