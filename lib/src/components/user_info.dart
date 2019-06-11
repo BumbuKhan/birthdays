@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../components/avatar.dart';
+
 // TODO: Add ability ro show multi birthdays in the same day.
 class UserInfo extends StatelessWidget {
   final String fullName;
@@ -10,9 +12,7 @@ class UserInfo extends StatelessWidget {
 
   Widget build(BuildContext context) {
     return ListTile(
-      leading: CircleAvatar(
-        backgroundImage: NetworkImage(this.imgUrl),
-      ),
+      leading: Avatar(imgUrl: this.imgUrl),
       title: Text('${this.fullName}', style: TextStyle( fontWeight: FontWeight.bold )),
       subtitle: Text('${this.age} years old'),
     );
