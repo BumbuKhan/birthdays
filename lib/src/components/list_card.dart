@@ -3,13 +3,14 @@ import 'package:flutter/material.dart';
 import 'components.dart';
 
 class ListCard extends StatelessWidget {
+  final int index;
   final String fullName;
   final int age;
   final String imgURL;
   final int birthDay;
   final String weekDay;
 
-  ListCard({ this.fullName, this.age, this.imgURL, this.birthDay, this.weekDay });
+  ListCard({ this.index, this.fullName, this.age, this.imgURL, this.birthDay, this.weekDay });
 
   Widget build(BuildContext build) {
     return Card(

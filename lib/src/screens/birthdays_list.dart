@@ -21,6 +21,7 @@ class BirthdaysList extends StatelessWidget {
     final prettifiedBirthDays = prettifyData(birthdays);
     final currentYear = DateTime.now().year;
     final widgets = <Widget> [];
+    int index = 1;
 
     prettifiedBirthDays.forEach((month, birthdaysByDays){
       widgets.add(MonthTitle(month: month, birthdaysCount: 5));
@@ -35,12 +36,14 @@ class BirthdaysList extends StatelessWidget {
           final age = currentYear - birthYear;
           final weekDay = weekDays['${DateTime(currentYear, month, day).weekday}'];
 
+          index++;
           widgets.add(ListCard(
               fullName: '${birthDay['firstName']} ${birthDay['lastName']}',
               age: age,
               imgURL: birthDay['avatar'],
               birthDay: day,
-              weekDay: weekDay
+              weekDay: weekDay,
+              index: index
           ));
         });
       });
