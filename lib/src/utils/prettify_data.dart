@@ -60,6 +60,7 @@
 ///     ]
 ///   }
 /// }
+// TODO: Sort months on client (if API wont);
 prettifyData(birthDays) {
   final Map<String, Map<String, List<Map<String, String>>>> result = new Map();
 

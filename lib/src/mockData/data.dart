@@ -1,6 +1,6 @@
 var birthdays = [
       {
-        "date": "05.01.1993",
+        "date": "06.06.1993",
         "firstName": "Alyssa",
         "lastName": "Holland",
         "avatar": "https://randomuser.me/api/portraits/women/51.jpg"
