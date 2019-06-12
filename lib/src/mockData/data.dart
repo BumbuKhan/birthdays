@@ -64,5 +64,11 @@ var birthdays = [
         "firstName": "Alan",
         "lastName": "Hawkins",
         "avatar": "https://uinames.com/api/photos/male/10.jpg"
+      },
+      {
+        "date": "24.06.1993",
+        "firstName": "Gurban",
+        "lastName": "Gurbanov",
+        "avatar": "https://uinames.com/api/photos/male/11.jpg"
       }
 ];

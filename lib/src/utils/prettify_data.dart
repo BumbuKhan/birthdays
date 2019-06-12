@@ -84,6 +84,39 @@ prettifyData(birthDays) {
   return result;
 }
 
+// TODO: use Date class.
+getDay(String date, {bool asString = false}) {
+  final day = date.substring(0, 2);
+
+  if (!asString) {
+    return int.parse(day);
+  }
+
+  return day;
+}
+
+// TODO: use Date class.
+getMonth(String date, {bool asString = false}) {
+  final month = date.substring(3, 5);
+
+  if (!asString) {
+    return int.parse(month);
+  }
+
+  return month;
+}
+
+// TODO: use Date class.
+getYear(String date, {bool asString = false}) {
+  final year = date.substring(6);
+
+  if (!asString) {
+    return int.parse(year);
+  }
+
+  return year;
+}
+
 final Map<String, String> months = {
   '01': 'January',
   '02': 'February',
@@ -97,4 +130,14 @@ final Map<String, String> months = {
   '10': 'October',
   '11': 'November',
   '12': 'December',
+};
+
+final Map<String, String> weekDays = {
+  "1": "Mon",
+  "2": "Tue",
+  "3": "Wed",
+  "4": "Thu",
+  "5": "Fri",
+  "6": "Sat",
+  "7": "Sun",
 };

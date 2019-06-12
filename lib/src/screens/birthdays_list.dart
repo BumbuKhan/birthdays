@@ -17,6 +17,7 @@ class BirthdaysList extends StatelessWidget {
 
   Widget buildList() {
     final prettifiedBirthDays = prettifyData(birthdays);
+    final currentYear = DateTime.now().year;
     final widgets = <Widget> [];
 
     prettifiedBirthDays.forEach((month, birthdaysByDays){
@@ -27,7 +28,14 @@ class BirthdaysList extends StatelessWidget {
           final fullName = '${birthDay['firstName']} ${birthDay['lastName']}';
           final avatar = birthDay['avatar'];
 
-          widgets.add(buildListCard(fullName, 21, avatar, '5', 'Mon'));
+          final date = birthDay['date'];
+          final day = getDay(date);
+          final month = getMonth(date);
+          final birthYear = getYear(date);
+          final age = currentYear - birthYear;
+          final weekDay = weekDays['${DateTime(currentYear, month, day).weekday}'];
+
+          widgets.add(buildListCard(fullName, age, avatar, day, weekDay));
         });
       });
     });
@@ -37,7 +45,7 @@ class BirthdaysList extends StatelessWidget {
     );
   }
 
-  Widget buildListCard (String fullName, int age, String imgURL, String birthDay, String weekDay) {
+  Widget buildListCard (String fullName, int age, String imgURL, int birthDay, String weekDay) {
     return Card(
       margin: EdgeInsets.only(top: 0, right: 16, bottom: 0, left: 16),
       elevation: 0,
