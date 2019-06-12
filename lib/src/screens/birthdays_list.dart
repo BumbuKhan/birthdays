@@ -8,6 +8,8 @@ class BirthdaysList extends StatelessWidget {
   Widget build(BuildContext build) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 0,
+        centerTitle: false,
         title: Text('Birthdays'),
       ),
       body: buildList(),
