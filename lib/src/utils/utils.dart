@@ -63,7 +63,6 @@
 // TODO: Sort months on client (if API wont);
 prettifyData(birthDays) {
   final Map<String, Map<String, List<Map<String, String>>>> result = new Map();
-  sortByMonths(birthDays);
 
   birthDays.forEach((Map<String, String> birthDay){
     // Getting months & day
@@ -84,15 +83,6 @@ prettifyData(birthDays) {
   });
 
   return result;
-}
-
-sortByMonths(List<Map<String, String>> birthDays) {
-  return birthDays.sort((a, b){
-    final aMonth = getMonth(a['date']);
-    final bMonth = getMonth(b['date']);
-
-    return aMonth.compareTo(bMonth);
-  });
 }
 
 // TODO: use Date class.

@@ -12,7 +12,7 @@ var birthdays = [
         "avatar": "https://randomuser.me/api/portraits/women/78.jpg"
       },
       {
-        "date": "07.01.1993",
+        "date": "17.01.1993",
         "firstName": "Florence",
         "lastName": "Fletcher",
         "avatar": "https://randomuser.me/api/portraits/women/12.jpg"
