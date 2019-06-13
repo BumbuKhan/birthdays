@@ -6,7 +6,7 @@ var birthdays = [
         "avatar": "https://randomuser.me/api/portraits/women/51.jpg"
       },
       {
-        "date": "06.01.2000",
+        "date": "06.12.2000",
         "firstName": "Minnie",
         "lastName": "Myers",
         "avatar": "https://randomuser.me/api/portraits/women/78.jpg"
