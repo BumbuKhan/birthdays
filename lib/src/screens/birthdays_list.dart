@@ -1,8 +1,8 @@
-import 'package:birthdays/src/utils/prettify_data.dart';
 import 'package:flutter/material.dart';
 
 import '../components/components.dart';
 import '../mockData/data.dart';
+import '../utils/utils.dart';
 
 class BirthdaysList extends StatelessWidget {
   Widget build(BuildContext build) {
